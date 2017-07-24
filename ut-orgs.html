@@ -1,0 +1,21 @@
+---
+layout: default
+title: Utah-Based Ed-Tech Companies
+---
+
+<h2>Utah-Based Ed-Tech Companies</h2>
+
+<!-- Organizations -->
+{% assign organizations = site.data.ut-orgs %}
+{% assign organizations = organizations | sort:"Name" %}
+
+<!-- Document -->
+
+{% for organization in organizations %}
+
+<ul>
+<li><strong>{{ ut-orgs.Name }}</strong> ({{ ut-orgs.Description }})</li>
+</ul>
+
+{% endfor %}
+
